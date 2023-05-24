@@ -1,0 +1,150 @@
+html,
+body {
+  background-image: url(../img/snake.jpg);
+  height: 100%;
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  width: 403px;
+  height: 403px;
+  background-image: url(../img/foto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid white;
+  border-radius: 25px;
+  border: 10px solid whitesmoke;
+  animation: mymove 4s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    border-color: green;
+  }
+}
+
+.text {
+  font-size: 35px;
+  color: green;
+  text-decoration: underline;
+  text-shadow: 2px 2px 15px;
+  position: absolute;
+  left: 44.5%;
+  top: 20%;
+}
+
+.text1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 22.5px;
+  width: 110px;
+  height: 38px;
+  color: black;
+  background-color: whitesmoke;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 15px;
+  position: absolute;
+  left: 66.5%;
+  top: 40%;
+}
+
+.scoreText {
+  font-family: "Permanent Marker", cursive;
+  font-size: 100px;
+  position: absolute;
+  left: 1300px;
+}
+
+.resetBtn {
+  font-family: "Permanent Marker", cursive;
+  font-size: 22px;
+  width: 100px;
+  height: 50px;
+  border: 4px solid;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 700px;
+  left: 900px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(../img/snakegif.jfif.crdownload);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .text {
+    color: white;
+  }
+}
+
+/* * {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width:100%;
+}
+
+.wrapper {
+    width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-auto-rows: minmax(100px, auto); */
+/* grid-template-areas: 
+    "img-left img-left img-left img-left tex tex tex tex img-right img-right img-right img-right"
+    "img-left img-left img-left img-left game game game game img-right img-right img-right img-right"
+    "img-left img-left img-left img-left game game game game img-right img-right img-right img-right"
+    "img-left img-left img-left img-left game game game game img-right img-right img-right img-right"
+    "img-left img-left img-left img-left game game game game img-right img-right img-right img-right"
+    "img-left img-left img-left img-left game game game game img-right img-right img-right img-right"
+    "img-left img-left img-left img-left game game game game img-right img-right img-right img-right"
+    "img-left img-left img-left img-left game game game game img-right img-right img-right img-right";
+     */
+/* } */
+/*                                                                                                             gelaten voor als ik nog verder wil met grid
+"img-left img-left img-left img-left tex tex  tex  tex img-right img-right img-right img-right"
+"img-left img-left img-left img-left tex tex  tex  tex img-right img-right img-right img-right"
+"img-left img-left img-left img-left tex game game tex img-right img-right img-right img-right"
+"img-left img-left img-left img-left tex game game tex img-right img-right img-right img-right"
+"img-left img-left img-left img-left tex game game tex img-right img-right img-right img-right"
+"img-left img-left img-left img-left tex tex  tex  tex img-right img-right img-right img-right"
+"img-left img-left img-left img-left tex tex  tex  tex img-right img-right img-right img-right";
+ */
+
+/* .box {
+    background-color: bisque;
+    border: 2px solid orange;
+}
+
+img{
+    width:100%;
+}
+
+.img-left {
+    grid-area: img-left;
+}
+
+.text {
+    grid-area: tex;
+}
+
+.img-right {
+    grid-area: img-right;
+}
+.game{
+    grid-area: game;
+} */
